@@ -29,7 +29,6 @@ public class Tesis extends Escrito {
 
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return String.format("%s\n%s\n%d\n%s\n%s", this.resumen(), this.idea, this.argumentos.length,
 				this.conclusion, this.referencias);
 	}
@@ -74,18 +73,5 @@ public class Tesis extends Escrito {
 		this.interpretacion = interpretacion;
 	}
 	
-	public static void main(String[] args) {
-		Tesis tesis = new Tesis("Pensamiento expansivo", "Recomendador", "Alejandro", 20, "Recomendar asignaturas", new String [] {"Primero", "Segundo"},
-				"Se hace trabajo futuro", "[1] Maquinaria",  "Escrito investigativo");
-		String  comp = "Pensamiento expansivo\n" + 
-				"Recomendador\n" + 
-				"Alejandro\n" + 
-				"20\n" + 
-				"Recomendar asignaturas\n" + 
-				"2\n" + 
-				"Se hace trabajo futuro\n" + 
-				"[1] Maquinaria";
-		System.out.println(tesis instanceof Escrito);
-		System.out.println(tesis instanceof Pictograma);
-	}
+	
 }
